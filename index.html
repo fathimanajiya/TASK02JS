@@ -10,7 +10,7 @@
         <h1>Tweet Your Thought</h1>
         <div class="image">
         <form>
-            <div class="tweet">
+            <div class="name">
             <label for="name">Name :</label><br> 
             <input type="text" name="Name" id="name">
             </div>
@@ -18,11 +18,15 @@
             <label for="email">Email :</label><br>
             <input type="text" name="Email" id="email">
              </div>
+             <div class="text">
             <label for="tweet">Tweet :</label>
-            <textarea rows="3" cols="60"></textarea><br>
-            <button>Tweet</button>
+            <textarea id="text" rows="3" cols="60"></textarea>
+            </div><br>
+            <button id="btn" onclick="tweet()">Tweet</button>
         </form>
         </div>
-        <footer id="foot">Tweets</footer>
-    </body>
+        <div class="content">
+            <h3 id="foot">Tweet</h3>
+        </div>
+       </body>
 </html>
